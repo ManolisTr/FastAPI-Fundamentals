@@ -1,0 +1,13 @@
+<service>
+<id>FastAPI Demo</id>
+<name>FastAPI Demo</name>
+<description>FastAPI Demo.</description> <executable>C:\Users\EmmanouilTroulakis\Desktop\FastAPI-Fundamentals\venv\Scripts\python.exe</executable>
+<arguments>C:\Users\EmmanouilTroulakis\Desktop\FastAPI-Fundamentals\FraudDetect-API\main.py</arguments> <onfailure action="restart" delay="30 sec"/>
+<onfailure action="restart" delay="40 sec"/>
+<onfailure action="restart" delay="60 sec"/>
+<log mode="roll-by-time">
+<logpath>C:\Users\EmmanouilTroulakis\Desktop\FastAPI-Fundamentals\FraudDetect-API\Logs</logpath>
+<pattern>yyyyMMdd</pattern>
+<keepFiles>8</keepFiles>
+</log>
+</service>
